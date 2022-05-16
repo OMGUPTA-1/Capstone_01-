@@ -85,7 +85,7 @@ def getMeanSquaredValue(experimentalValues, modeledValues):
 
 # Finds the optimal order n of a polynomial fit using minimum chi-square analysis
 # inputs: a list of experimental x values (OCV measurements) and list of experimental y values (normalized SoC)
-# returns: a list object of [order n, chi-squared value of the nth order fit], where n is the optimal order fit
+# returns: a list object of [order n, mean-squared value of the nth order fit], where n is the optimal order fit
 def findOptimalOrderFit(xValues, yValues):
     # Only checks order n=1:8 to minimize compute time
     n = 1
